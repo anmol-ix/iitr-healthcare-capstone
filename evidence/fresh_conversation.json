@@ -1,5 +1,5 @@
 {
-  "trace_id": "174ce32a077344b88ef5de6a464606e5",
+  "trace_id": "5b7bf07e715940ca92175b337d8b136f",
   "session_id": "fresh-conversation",
   "response_format": {
     "answer": "Please provide an appointment reference such as APT-001. This session has no appointment reference.",
@@ -15,7 +15,7 @@
   "outcome": "fallback",
   "cache_hit": false,
   "masked_input": "What is its fee?",
-  "elapsed_ms": 46.711,
+  "elapsed_ms": 52.346,
   "executed_agents": [
     "Retrieval Agent",
     "Lookup Agent",

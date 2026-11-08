@@ -46,4 +46,4 @@ tests/test_capstone.py: 102 warnings
     and getattr(agent, "multimodal", False)
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-93 passed, 1191 warnings in 34.74s
+93 passed, 1191 warnings in 41.34s

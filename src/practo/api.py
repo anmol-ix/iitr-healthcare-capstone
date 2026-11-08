@@ -27,6 +27,10 @@ def create_app(service=None):
 
     @app.get("/", include_in_schema=False)
     async def interface():
+        return FileResponse(ui / "spatial.html")
+
+    @app.get("/classic", include_in_schema=False)
+    async def classic_interface():
         return FileResponse(ui / "index.html")
 
     @app.get("/policies")

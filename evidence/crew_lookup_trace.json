@@ -1,6 +1,6 @@
 {
   "event": "inference",
-  "trace_id": "dd98193d564a4d87bdfbab43f181a9ea",
+  "trace_id": "b4869d47804e4a9992ebbdded7627025",
   "session_id": "memory-demo",
   "query": "What is the status of APT-001?",
   "mode": "MOCK_LLM",
@@ -120,7 +120,7 @@
     }
   ],
   "result": {
-    "trace_id": "dd98193d564a4d87bdfbab43f181a9ea",
+    "trace_id": "b4869d47804e4a9992ebbdded7627025",
     "session_id": "memory-demo",
     "response_format": {
       "answer": "Appointment APT-001 is Completed. Recorded consultation fee: INR 1100. Administrative escalation score: 0.327. No administrative escalation recommended.",
@@ -143,7 +143,7 @@
     "outcome": "answered",
     "cache_hit": false,
     "masked_input": "What is the status of APT-001?",
-    "elapsed_ms": 70.285,
+    "elapsed_ms": 71.812,
     "executed_agents": [
       "Retrieval Agent",
       "Lookup Agent",
@@ -196,7 +196,7 @@
       "simulated_cost_usd": 0.017265
     }
   ],
-  "elapsed_ms": 70.309,
+  "elapsed_ms": 71.843,
   "counters": {
     "crew_calls": 15,
     "review_calls": 15,

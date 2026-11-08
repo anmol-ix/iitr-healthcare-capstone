@@ -8,7 +8,7 @@
     },
     "status": 200,
     "body": {
-      "trace_id": "1728e1b0b01b41738c2c0ecdac94a155",
+      "trace_id": "ce9506701a0a49a09700466511d36153",
       "session_id": "api-demo",
       "response_format": {
         "answer": "Appointment APT-002 is Completed. Recorded consultation fee: INR 1700. Administrative escalation score: 0.023. No administrative escalation recommended.",
@@ -31,7 +31,7 @@
       "outcome": "answered",
       "cache_hit": false,
       "masked_input": "What is the status of APT-002?",
-      "elapsed_ms": 116.675,
+      "elapsed_ms": 67.861,
       "executed_agents": [
         "Retrieval Agent",
         "Lookup Agent",
@@ -74,7 +74,7 @@
     "transport": "WebSocket",
     "query": "What is the status of APT-007?",
     "response": {
-      "trace_id": "ed0aa3fae955404297e4775072681e94",
+      "trace_id": "d1dc9cd8d1c4462fb2cabdfed10822a4",
       "session_id": "socket-demo",
       "response_format": {
         "answer": "Appointment APT-007 is Cancelled. Recorded consultation fee: INR 1900. Administrative escalation score: 0.895. No administrative escalation recommended.",
@@ -97,7 +97,7 @@
       "outcome": "answered",
       "cache_hit": false,
       "masked_input": "What is the status of APT-007?",
-      "elapsed_ms": 89.311,
+      "elapsed_ms": 74.659,
       "executed_agents": [
         "Retrieval Agent",
         "Lookup Agent",
@@ -116,7 +116,7 @@
     "transport": "WebSocket",
     "query": "What is its fee?",
     "response": {
-      "trace_id": "982ae9aa681f4501bc7d58f57c018126",
+      "trace_id": "ed2115b734c9435ebe20ca9d244a61fe",
       "session_id": "socket-demo",
       "response_format": {
         "answer": "Appointment APT-007 is Cancelled. Recorded consultation fee: INR 1900. Administrative escalation score: 0.895. No administrative escalation recommended.",
@@ -139,7 +139,7 @@
       "outcome": "answered",
       "cache_hit": false,
       "masked_input": "What is its fee?",
-      "elapsed_ms": 59.739,
+      "elapsed_ms": 81.169,
       "executed_agents": [
         "Retrieval Agent",
         "Lookup Agent",
@@ -167,7 +167,7 @@
   {
     "transport": "WebSocket new session",
     "response": {
-      "trace_id": "68eb076676fc457d9b4ee597457c4f48",
+      "trace_id": "594119fa729e41598757e0b964dc7c4b",
       "session_id": "socket-fresh",
       "response_format": {
         "answer": "Please provide an appointment reference such as APT-001. This session has no appointment reference.",
@@ -183,7 +183,7 @@
       "outcome": "fallback",
       "cache_hit": true,
       "masked_input": "What is its fee?",
-      "elapsed_ms": 0.118,
+      "elapsed_ms": 0.083,
       "executed_agents": [],
       "executed_tools": [],
       "budget_units": 528
@@ -209,7 +209,7 @@
   },
   {
     "after_document_update": {
-      "trace_id": "d2069433b45148e6b075be5480e33714",
+      "trace_id": "6336e15d3172457eb629d0de63358ee1",
       "session_id": "new-policy",
       "response_format": {
         "answer": "A wheelchair-accessible ramp is available at the clinic entrance. Reception staff can arrange entry assistance on request.",
@@ -227,7 +227,7 @@
       "outcome": "answered",
       "cache_hit": false,
       "masked_input": "Is wheelchair access available at the entrance?",
-      "elapsed_ms": 73.564,
+      "elapsed_ms": 62.864,
       "executed_agents": [
         "Retrieval Agent",
         "Lookup Agent",

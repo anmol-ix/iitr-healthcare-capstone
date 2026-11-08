@@ -1,6 +1,6 @@
 {
   "event": "inference",
-  "trace_id": "faebb0467ee042c984e7ad8119658c9c",
+  "trace_id": "fbec814011b343b8bed4217353ab1eaa",
   "session_id": "combined-demo",
   "query": "Check APT-003 and explain the cancellation window.",
   "mode": "MOCK_LLM",
@@ -135,7 +135,7 @@
     }
   ],
   "result": {
-    "trace_id": "faebb0467ee042c984e7ad8119658c9c",
+    "trace_id": "fbec814011b343b8bed4217353ab1eaa",
     "session_id": "combined-demo",
     "response_format": {
       "answer": "Appointment APT-003 is Scheduled. Recorded consultation fee: INR 1500. Administrative escalation score: 0.105. No administrative escalation recommended. Appointment cancellation and rescheduling are allowed without a change fee at least 12 hours before the appointment. Changes within 12 hours require staff review and do not guarantee a refund. A rescheduled visit receives a new confirmed slot while retaining the original appointment reference.",
@@ -160,7 +160,7 @@
     "outcome": "answered",
     "cache_hit": false,
     "masked_input": "Check APT-003 and explain the cancellation window.",
-    "elapsed_ms": 72.752,
+    "elapsed_ms": 83.978,
     "executed_agents": [
       "Retrieval Agent",
       "Lookup Agent",
@@ -213,7 +213,7 @@
       "simulated_cost_usd": 0.020995
     }
   ],
-  "elapsed_ms": 72.779,
+  "elapsed_ms": 84.009,
   "counters": {
     "crew_calls": 18,
     "review_calls": 18,

@@ -1,7 +1,7 @@
 {
   "query": "What is the consultation fee structure by specialty?",
   "first": {
-    "trace_id": "cf173cb810a74c609a893f1b885eecc8",
+    "trace_id": "89c8238e7f6f48f9a6df416e4173ee0e",
     "session_id": "cache-demo",
     "response_format": {
       "answer": "Consultation fees in this fictional clinic are INR 500 for General Medicine, INR 1200 for Cardiology, INR 800 for Dermatology, INR 700 for Pediatrics, and INR 1000 for Orthopedics. Laboratory tests and procedures are charged separately. A booked appointment's recorded fee is authoritative because a promotion or specialist tier can change the quoted fee.",
@@ -19,7 +19,7 @@
     "outcome": "answered",
     "cache_hit": false,
     "masked_input": "What is the consultation fee structure by specialty?",
-    "elapsed_ms": 74.883,
+    "elapsed_ms": 80.091,
     "executed_agents": [
       "Retrieval Agent",
       "Lookup Agent",
@@ -33,7 +33,7 @@
     "budget_units": 20454
   },
   "repeat": {
-    "trace_id": "cde9db4187e74648a7483205ca384476",
+    "trace_id": "4d8c5facf3524d2da8865eb0e6fc8336",
     "session_id": "cache-demo",
     "response_format": {
       "answer": "Consultation fees in this fictional clinic are INR 500 for General Medicine, INR 1200 for Cardiology, INR 800 for Dermatology, INR 700 for Pediatrics, and INR 1000 for Orthopedics. Laboratory tests and procedures are charged separately. A booked appointment's recorded fee is authoritative because a promotion or specialist tier can change the quoted fee.",
@@ -51,7 +51,7 @@
     "outcome": "answered",
     "cache_hit": true,
     "masked_input": "What is the consultation fee structure by specialty?",
-    "elapsed_ms": 0.076,
+    "elapsed_ms": 0.189,
     "executed_agents": [],
     "executed_tools": [],
     "budget_units": 564

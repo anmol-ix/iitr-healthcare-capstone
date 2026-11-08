@@ -154,3 +154,9 @@ Publish this repository as **public**, with `README.md`, `dataset.py`, `src/`, `
 ## Teaching-resource alignment
 
 See [resource review and six-box design contract](docs/RESOURCE_REVIEW.md) for the session sources, access limitations and mapping from the teaching example to this package. Basic greetings and capability questions use explicit static application help; policy questions still use the actual retrieval/CrewAI/AutoGen pipeline. Help responses correctly report no agent execution or policy review.
+
+## Spatial clinic interface
+
+The default page opens an animated architectural district. Choose a clinic, approach its entrance and open chat inside its reception. Chat calls the same `/ask` endpoint as the classic dashboard, with actual citations, review results and execution metadata. New conversation creates a fresh session. Policy cards open the original corpus from `/policies`. `/classic` retains the detailed dashboard; `/docs` retains Swagger.
+
+The spatial renderer is a dependency-free Canvas 2D projection with eased camera transforms, interior transitions and pointer parallax, not a Three.js/WebGL engine. All clinics use the same fictional corpus; choosing a building does not imply separate medical providers or specialist diagnosis. No assets, fonts or scripts load from a CDN. Reduced-motion preferences are respected.

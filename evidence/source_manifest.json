@@ -18,7 +18,7 @@
   "scripts/live_smoke.py": "a004239ba56b1ef70df0af45da510bc16756f9f257555181b8711e8a30cdd5d9",
   "scripts/run_evidence.py": "b39f3d726a9a49c5cf3813cabb045c6e88433e35051b1eae60aafa9867087f43",
   "src/practo/__init__.py": "addb591fa43375b92a114a86e141ae53841c86bee739542175fbb16a95c246d3",
-  "src/practo/api.py": "8818887cd10bf4147e8e36f52a82904c4749a6e510411c9b18b0d34813a51134",
+  "src/practo/api.py": "7a2823db4b8d42b444c4af6b8f8956fd2728c4ef2e9b0e8acad173bcc349fa72",
   "src/practo/crew.py": "da1148a92be73224a603a64f689a6fdbe15413d89bb1ceca4c7c6da0b5caa414",
   "src/practo/evaluation.py": "b167e02b9d2337f03fa1c2e286afd86d126ce6e8cc41e0bdac7470bafd96c932",
   "src/practo/governance.py": "c2cb74de99d9075fc100dbda9745ede4e6d869ae2812e6d27d18d7e0e4201d4a",
@@ -31,5 +31,6 @@
   "src/practo/service.py": "ef01df3ceb348e55a692e0db633a5ad3e2e7c2bbaf0a602c2ac1d605f8fb77c6",
   "src/practo/web/app.js": "6e85a3f81f277a4024b77c268828999f50c190d91c53969ef0e6c5b65b255ae6",
   "src/practo/web/index.html": "0397268470c2c39f5b464621d5c68063bdc0ddbcbdf9861859e96d7fc4a88922",
+  "src/practo/web/spatial.html": "2dfde2447827d222fb2c2d79b0561e6314edbaa4f87d6b3e374d7ca49125f2ed",
   "src/practo/web/style.css": "be365fc81a8a7296e8f8c2de682279c4e43cddaaae1e375b8f6baec631ece71f"
 }
