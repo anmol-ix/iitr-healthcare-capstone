@@ -1,0 +1,206 @@
+{
+  "event": "inference",
+  "trace_id": "dd98193d564a4d87bdfbab43f181a9ea",
+  "session_id": "memory-demo",
+  "query": "What is the status of APT-001?",
+  "mode": "MOCK_LLM",
+  "tool_events": [
+    {
+      "agent": "Retrieval Agent",
+      "tool": "rag_lookup",
+      "arguments": {
+        "query": "What is the status of APT-001?"
+      },
+      "cache_hit": false
+    },
+    {
+      "agent": "Lookup Agent",
+      "tool": "check_appointment_status",
+      "arguments": {
+        "record_id": "APT-001"
+      },
+      "result": {
+        "record_id": "APT-001",
+        "found": true,
+        "status": "Completed",
+        "consultation_fee_inr": 1100,
+        "escalation_score": 0.326667,
+        "recommend_escalation": false
+      }
+    }
+  ],
+  "record_id": "APT-001",
+  "record_only": true,
+  "missing_reference": false,
+  "model_calls": [
+    "Retrieval Agent",
+    "Lookup Agent",
+    "Response Composer"
+  ],
+  "rag": {
+    "answer": "I don't know based on the available clinic policy documents. Please contact clinic support.",
+    "chunks": [],
+    "retrieved": [
+      {
+        "chunk_id": "privacy-1",
+        "text": "Patients may request access or correction through the clinic privacy desk after identity verification. This demonstration uses fabricated data only and masks phone numbers before processing or logging support requests.",
+        "document_id": "privacy",
+        "similarity": 0.191375
+      },
+      {
+        "chunk_id": "emergency-0",
+        "text": "For a medical emergency, contact local emergency services or go to the nearest emergency department immediately. Routine appointment slots and this support assistant are not emergency response services.",
+        "document_id": "emergency",
+        "similarity": 0.183589
+      },
+      {
+        "chunk_id": "insurance-1",
+        "text": "The clinic provides supporting billing documents within two business days after a visit. Coverage decisions and reimbursement timelines belong to the insurer; clinic staff cannot promise approval.",
+        "document_id": "insurance",
+        "similarity": 0.182147
+      },
+      {
+        "chunk_id": "emergency-1",
+        "text": "Routine appointment slots and this support assistant are not emergency response services. Clinic staff may provide routing assistance but must not delay urgent care while checking an appointment.",
+        "document_id": "emergency",
+        "similarity": 0.181088
+      }
+    ],
+    "citations": [],
+    "fallback": true,
+    "cache_hit": false
+  },
+  "lookup": {
+    "record_id": "APT-001",
+    "found": true,
+    "status": "Completed",
+    "consultation_fee_inr": 1100,
+    "escalation_score": 0.326667,
+    "recommend_escalation": false
+  },
+  "task_outputs": [
+    {
+      "agent": "Retrieval Agent",
+      "raw": "{\"answer\": \"I don't know based on the available clinic policy documents. Please contact clinic support.\", \"chunks\": [], \"retrieved\": [{\"chunk_id\": \"privacy-1\", \"text\": \"Patients may request access or correction through the clinic privacy desk after identity verification. This demonstration uses fabricated data only and masks phone numbers before processing or logging support requests.\", \"document_id\": \"privacy\", \"similarity\": 0.191375}, {\"chunk_id\": \"emergency-0\", \"text\": \"For a medical emergency, contact local emergency services or go to the nearest emergency department immediately. Routine appointment slots and this support assistant are not emergency response services.\", \"document_id\": \"emergency\", \"similarity\": 0.183589}, {\"chunk_id\": \"insurance-1\", \"text\": \"The clinic provides supporting billing documents within two business days after a visit. Coverage decisions and reimbursement timelines belong to the insurer; clinic staff cannot promise approval.\", \"document_id\": \"insurance\", \"similarity\": 0.182147}, {\"chunk_id\": \"emergency-1\", \"text\": \"Routine appointment slots and this support assistant are not emergency response services. Clinic staff may provide routing assistance but must not delay urgent care while checking an appointment.\", \"document_id\": \"emergency\", \"similarity\": 0.181088}], \"citations\": [], \"fallback\": true, \"cache_hit\": false}"
+    },
+    {
+      "agent": "Lookup Agent",
+      "raw": "{\"record_id\": \"APT-001\", \"found\": true, \"status\": \"Completed\", \"consultation_fee_inr\": 1100, \"escalation_score\": 0.326667, \"recommend_escalation\": false}"
+    },
+    {
+      "agent": "Response Composer",
+      "raw": "{\"answer\":\"Appointment APT-001 is Completed. Recorded consultation fee: INR 1100. Administrative escalation score: 0.327. No administrative escalation recommended.\",\"citations\":[],\"lookup\":{\"record_id\":\"APT-001\",\"found\":true,\"status\":\"Completed\",\"consultation_fee_inr\":1100,\"escalation_score\":0.326667,\"recommend_escalation\":false},\"fallback\":false}"
+    }
+  ],
+  "tool_ownership": {
+    "Retrieval Agent": [
+      "rag_lookup"
+    ],
+    "Lookup Agent": [
+      "check_appointment_status"
+    ],
+    "Response Composer": []
+  },
+  "review_transcript": [
+    {
+      "source": "user",
+      "content": "REVIEW_INPUT:{\"draft\": \"Appointment APT-001 is Completed. Recorded consultation fee: INR 1100. Administrative escalation score: 0.327. No administrative escalation recommended.\", \"chunks\": [], \"lookup\": {\"record_id\": \"APT-001\", \"found\": true, \"status\": \"Completed\", \"consultation_fee_inr\": 1100, \"escalation_score\": 0.326667, \"recommend_escalation\": false}, \"record_only\": true, \"missing_reference\": false}"
+    },
+    {
+      "source": "PolicyComplianceReviewer",
+      "content": "{\"approved\": true, \"final_answer\": \"Appointment APT-001 is Completed. Recorded consultation fee: INR 1100. Administrative escalation score: 0.327. No administrative escalation recommended.\", \"reason\": \"Draft is supported by retrieved policy/lookup evidence.\"}"
+    },
+    {
+      "source": "FinalEditor",
+      "content": {
+        "approved": true,
+        "final_answer": "Appointment APT-001 is Completed. Recorded consultation fee: INR 1100. Administrative escalation score: 0.327. No administrative escalation recommended.",
+        "reason": "Draft is supported by retrieved policy/lookup evidence."
+      }
+    }
+  ],
+  "result": {
+    "trace_id": "dd98193d564a4d87bdfbab43f181a9ea",
+    "session_id": "memory-demo",
+    "response_format": {
+      "answer": "Appointment APT-001 is Completed. Recorded consultation fee: INR 1100. Administrative escalation score: 0.327. No administrative escalation recommended.",
+      "citations": [],
+      "lookup": {
+        "record_id": "APT-001",
+        "found": true,
+        "status": "Completed",
+        "consultation_fee_inr": 1100,
+        "escalation_score": 0.326667,
+        "recommend_escalation": false
+      },
+      "fallback": false
+    },
+    "review": {
+      "approved": true,
+      "final_answer": "Appointment APT-001 is Completed. Recorded consultation fee: INR 1100. Administrative escalation score: 0.327. No administrative escalation recommended.",
+      "reason": "Draft is supported by retrieved policy/lookup evidence."
+    },
+    "outcome": "answered",
+    "cache_hit": false,
+    "masked_input": "What is the status of APT-001?",
+    "elapsed_ms": 70.285,
+    "executed_agents": [
+      "Retrieval Agent",
+      "Lookup Agent",
+      "Response Composer",
+      "PolicyComplianceReviewer",
+      "FinalEditor"
+    ],
+    "executed_tools": [
+      "rag_lookup",
+      "check_appointment_status"
+    ],
+    "budget_units": 17265
+  },
+  "cache_hit": false,
+  "budget": [
+    {
+      "stage": "input",
+      "charged_tokens": 542,
+      "total_tokens": 542,
+      "simulated_cost_usd": 0.000542
+    },
+    {
+      "stage": "Retrieval Agent",
+      "charged_tokens": 2774,
+      "total_tokens": 3316,
+      "simulated_cost_usd": 0.003316
+    },
+    {
+      "stage": "Lookup Agent",
+      "charged_tokens": 4299,
+      "total_tokens": 7615,
+      "simulated_cost_usd": 0.007615
+    },
+    {
+      "stage": "Response Composer",
+      "charged_tokens": 6040,
+      "total_tokens": 13655,
+      "simulated_cost_usd": 0.013655
+    },
+    {
+      "stage": "PolicyComplianceReviewer",
+      "charged_tokens": 1648,
+      "total_tokens": 15303,
+      "simulated_cost_usd": 0.015303
+    },
+    {
+      "stage": "FinalEditor",
+      "charged_tokens": 1962,
+      "total_tokens": 17265,
+      "simulated_cost_usd": 0.017265
+    }
+  ],
+  "elapsed_ms": 70.309,
+  "counters": {
+    "crew_calls": 15,
+    "review_calls": 15,
+    "tool_calls": 16,
+    "generation_calls": 15
+  }
+}

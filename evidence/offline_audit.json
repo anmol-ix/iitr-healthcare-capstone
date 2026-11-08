@@ -1,0 +1,11 @@
+{
+  "mode": "MOCK_LLM",
+  "external_network_attempts": [],
+  "guard": "Python socket connect/connect_ex and getaddrinfo blocked except loopback/local sockets",
+  "scope": "Framework imports, local embedding load/index, all demonstration requests and TestClient API execution",
+  "network_needed_at_runtime": false,
+  "api_keys_required": false,
+  "limits": "Python socket tripwire is not an OS firewall; optional OS-level isolation is stronger.",
+  "structured_log_entries": 37,
+  "raw_phone_leaked": false
+}

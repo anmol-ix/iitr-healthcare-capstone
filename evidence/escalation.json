@@ -1,0 +1,488 @@
+{
+  "formula": "0.65 * int(follow_up_required) + 0.35 * days_since_created / 30",
+  "age_p80_nearest_rank": 24,
+  "strict_greater_than_threshold": 0.9299999999999999,
+  "recommended_count": 3,
+  "records": [
+    {
+      "record_id": "APT-001",
+      "found": true,
+      "status": "Completed",
+      "consultation_fee_inr": 1100,
+      "escalation_score": 0.326667,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-002",
+      "found": true,
+      "status": "Completed",
+      "consultation_fee_inr": 1700,
+      "escalation_score": 0.023333,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-003",
+      "found": true,
+      "status": "Scheduled",
+      "consultation_fee_inr": 1500,
+      "escalation_score": 0.105,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-004",
+      "found": true,
+      "status": "Rescheduled",
+      "consultation_fee_inr": 1200,
+      "escalation_score": 0.291667,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-005",
+      "found": true,
+      "status": "Rescheduled",
+      "consultation_fee_inr": 1700,
+      "escalation_score": 0.338333,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-006",
+      "found": true,
+      "status": "Completed",
+      "consultation_fee_inr": 900,
+      "escalation_score": 0.0,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-007",
+      "found": true,
+      "status": "Cancelled",
+      "consultation_fee_inr": 1900,
+      "escalation_score": 0.895,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-008",
+      "found": true,
+      "status": "No-Show",
+      "consultation_fee_inr": 1900,
+      "escalation_score": 0.023333,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-009",
+      "found": true,
+      "status": "Completed",
+      "consultation_fee_inr": 600,
+      "escalation_score": 0.941667,
+      "recommend_escalation": true
+    },
+    {
+      "record_id": "APT-010",
+      "found": true,
+      "status": "Completed",
+      "consultation_fee_inr": 500,
+      "escalation_score": 0.093333,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-011",
+      "found": true,
+      "status": "Rescheduled",
+      "consultation_fee_inr": 1200,
+      "escalation_score": 0.35,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-012",
+      "found": true,
+      "status": "Scheduled",
+      "consultation_fee_inr": 1600,
+      "escalation_score": 0.233333,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-013",
+      "found": true,
+      "status": "Completed",
+      "consultation_fee_inr": 1500,
+      "escalation_score": 0.941667,
+      "recommend_escalation": true
+    },
+    {
+      "record_id": "APT-014",
+      "found": true,
+      "status": "Completed",
+      "consultation_fee_inr": 1400,
+      "escalation_score": 0.046667,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-015",
+      "found": true,
+      "status": "Completed",
+      "consultation_fee_inr": 400,
+      "escalation_score": 0.21,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-016",
+      "found": true,
+      "status": "Scheduled",
+      "consultation_fee_inr": 1900,
+      "escalation_score": 0.303333,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-017",
+      "found": true,
+      "status": "Completed",
+      "consultation_fee_inr": 1000,
+      "escalation_score": 0.023333,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-018",
+      "found": true,
+      "status": "Completed",
+      "consultation_fee_inr": 1300,
+      "escalation_score": 0.0,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-019",
+      "found": true,
+      "status": "Completed",
+      "consultation_fee_inr": 600,
+      "escalation_score": 0.268333,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-020",
+      "found": true,
+      "status": "Scheduled",
+      "consultation_fee_inr": 1700,
+      "escalation_score": 0.023333,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-021",
+      "found": true,
+      "status": "Scheduled",
+      "consultation_fee_inr": 1500,
+      "escalation_score": 0.116667,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-022",
+      "found": true,
+      "status": "Scheduled",
+      "consultation_fee_inr": 1100,
+      "escalation_score": 0.151667,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-023",
+      "found": true,
+      "status": "Scheduled",
+      "consultation_fee_inr": 1200,
+      "escalation_score": 0.661667,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-024",
+      "found": true,
+      "status": "Rescheduled",
+      "consultation_fee_inr": 1100,
+      "escalation_score": 0.128333,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-025",
+      "found": true,
+      "status": "Cancelled",
+      "consultation_fee_inr": 2000,
+      "escalation_score": 0.14,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-026",
+      "found": true,
+      "status": "Scheduled",
+      "consultation_fee_inr": 400,
+      "escalation_score": 0.198333,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-027",
+      "found": true,
+      "status": "Scheduled",
+      "consultation_fee_inr": 2000,
+      "escalation_score": 0.0,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-028",
+      "found": true,
+      "status": "Completed",
+      "consultation_fee_inr": 2000,
+      "escalation_score": 0.965,
+      "recommend_escalation": true
+    },
+    {
+      "record_id": "APT-029",
+      "found": true,
+      "status": "No-Show",
+      "consultation_fee_inr": 500,
+      "escalation_score": 0.813333,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-030",
+      "found": true,
+      "status": "Completed",
+      "consultation_fee_inr": 1800,
+      "escalation_score": 0.256667,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-031",
+      "found": true,
+      "status": "Cancelled",
+      "consultation_fee_inr": 1100,
+      "escalation_score": 0.21,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-032",
+      "found": true,
+      "status": "No-Show",
+      "consultation_fee_inr": 700,
+      "escalation_score": 0.151667,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-033",
+      "found": true,
+      "status": "Cancelled",
+      "consultation_fee_inr": 1000,
+      "escalation_score": 0.291667,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-034",
+      "found": true,
+      "status": "Completed",
+      "consultation_fee_inr": 1500,
+      "escalation_score": 0.708333,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-035",
+      "found": true,
+      "status": "Completed",
+      "consultation_fee_inr": 700,
+      "escalation_score": 0.673333,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-036",
+      "found": true,
+      "status": "Rescheduled",
+      "consultation_fee_inr": 500,
+      "escalation_score": 0.175,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-037",
+      "found": true,
+      "status": "Scheduled",
+      "consultation_fee_inr": 2000,
+      "escalation_score": 0.151667,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-038",
+      "found": true,
+      "status": "Rescheduled",
+      "consultation_fee_inr": 1700,
+      "escalation_score": 0.035,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-039",
+      "found": true,
+      "status": "No-Show",
+      "consultation_fee_inr": 500,
+      "escalation_score": 0.28,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-040",
+      "found": true,
+      "status": "Completed",
+      "consultation_fee_inr": 2000,
+      "escalation_score": 0.116667,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-041",
+      "found": true,
+      "status": "Scheduled",
+      "consultation_fee_inr": 800,
+      "escalation_score": 0.86,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-042",
+      "found": true,
+      "status": "No-Show",
+      "consultation_fee_inr": 700,
+      "escalation_score": 0.151667,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-043",
+      "found": true,
+      "status": "Completed",
+      "consultation_fee_inr": 1500,
+      "escalation_score": 0.291667,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-044",
+      "found": true,
+      "status": "Scheduled",
+      "consultation_fee_inr": 1600,
+      "escalation_score": 0.105,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-045",
+      "found": true,
+      "status": "Scheduled",
+      "consultation_fee_inr": 400,
+      "escalation_score": 0.058333,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-046",
+      "found": true,
+      "status": "Scheduled",
+      "consultation_fee_inr": 1400,
+      "escalation_score": 0.035,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-047",
+      "found": true,
+      "status": "Completed",
+      "consultation_fee_inr": 2000,
+      "escalation_score": 0.28,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-048",
+      "found": true,
+      "status": "Rescheduled",
+      "consultation_fee_inr": 2000,
+      "escalation_score": 0.093333,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-049",
+      "found": true,
+      "status": "Completed",
+      "consultation_fee_inr": 500,
+      "escalation_score": 0.268333,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-050",
+      "found": true,
+      "status": "Completed",
+      "consultation_fee_inr": 1900,
+      "escalation_score": 0.906667,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-051",
+      "found": true,
+      "status": "Scheduled",
+      "consultation_fee_inr": 2000,
+      "escalation_score": 0.315,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-052",
+      "found": true,
+      "status": "Completed",
+      "consultation_fee_inr": 500,
+      "escalation_score": 0.778333,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-053",
+      "found": true,
+      "status": "Scheduled",
+      "consultation_fee_inr": 1500,
+      "escalation_score": 0.28,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-054",
+      "found": true,
+      "status": "Scheduled",
+      "consultation_fee_inr": 1500,
+      "escalation_score": 0.151667,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-055",
+      "found": true,
+      "status": "No-Show",
+      "consultation_fee_inr": 400,
+      "escalation_score": 0.07,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-056",
+      "found": true,
+      "status": "Scheduled",
+      "consultation_fee_inr": 1900,
+      "escalation_score": 0.116667,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-057",
+      "found": true,
+      "status": "Scheduled",
+      "consultation_fee_inr": 1900,
+      "escalation_score": 0.151667,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-058",
+      "found": true,
+      "status": "Completed",
+      "consultation_fee_inr": 1900,
+      "escalation_score": 0.766667,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-059",
+      "found": true,
+      "status": "Scheduled",
+      "consultation_fee_inr": 800,
+      "escalation_score": 0.268333,
+      "recommend_escalation": false
+    },
+    {
+      "record_id": "APT-060",
+      "found": true,
+      "status": "No-Show",
+      "consultation_fee_inr": 900,
+      "escalation_score": 0.081667,
+      "recommend_escalation": false
+    }
+  ]
+}

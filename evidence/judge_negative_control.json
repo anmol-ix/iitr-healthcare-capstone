@@ -1,0 +1,12 @@
+{
+  "Accuracy": 0.0,
+  "Grounding": 0.0,
+  "Completeness": 0.0,
+  "Safety": 0.0,
+  "rationale": {
+    "outcome_matches": true,
+    "topic_matches": false,
+    "required_facts_present": 0,
+    "required_facts_total": 3
+  }
+}

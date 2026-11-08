@@ -1,0 +1,25 @@
+{
+  "verdict": {
+    "approved": true,
+    "final_answer": "Insurance claims require the consultation invoice, payment receipt, and the insurer's completed claim form. The clinic provides supporting billing documents within two business days after a visit. Coverage decisions and reimbursement timelines belong to the insurer; clinic staff cannot promise approval.",
+    "reason": "Draft is supported by retrieved policy/lookup evidence."
+  },
+  "transcript": [
+    {
+      "source": "user",
+      "content": "REVIEW_INPUT:{\"draft\": \"Insurance claims require the consultation invoice, payment receipt, and the insurer's completed claim form. The clinic provides supporting billing documents within two business days after a visit. Coverage decisions and reimbursement timelines belong to the insurer; clinic staff cannot promise approval.\", \"chunks\": [{\"chunk_id\": \"insurance-0\", \"text\": \"Insurance claims require the consultation invoice, payment receipt, and the insurer's completed claim form. The clinic provides supporting billing documents within two business days after a visit.\", \"document_id\": \"insurance\", \"similarity\": 0.556785}, {\"chunk_id\": \"insurance-1\", \"text\": \"The clinic provides supporting billing documents within two business days after a visit. Coverage decisions and reimbursement timelines belong to the insurer; clinic staff cannot promise approval.\", \"document_id\": \"insurance\", \"similarity\": 0.372473}], \"lookup\": null, \"record_only\": false, \"missing_reference\": false}"
+    },
+    {
+      "source": "PolicyComplianceReviewer",
+      "content": "{\"approved\": true, \"final_answer\": \"Insurance claims require the consultation invoice, payment receipt, and the insurer's completed claim form. The clinic provides supporting billing documents within two business days after a visit. Coverage decisions and reimbursement timelines belong to the insurer; clinic staff cannot promise approval.\", \"reason\": \"Draft is supported by retrieved policy/lookup evidence.\"}"
+    },
+    {
+      "source": "FinalEditor",
+      "content": {
+        "approved": true,
+        "final_answer": "Insurance claims require the consultation invoice, payment receipt, and the insurer's completed claim form. The clinic provides supporting billing documents within two business days after a visit. Coverage decisions and reimbursement timelines belong to the insurer; clinic staff cannot promise approval.",
+        "reason": "Draft is supported by retrieved policy/lookup evidence."
+      }
+    }
+  ]
+}

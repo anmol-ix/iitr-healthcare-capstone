@@ -1,0 +1,58 @@
+{
+  "fixed": {
+    "in_scope": [
+      {
+        "query": "How do I book an appointment?",
+        "similarity": 0.711693
+      },
+      {
+        "query": "What is the cancellation and rescheduling window?",
+        "similarity": 0.527769
+      },
+      {
+        "query": "What is the turnaround time for laboratory blood test results?",
+        "similarity": 0.827591
+      }
+    ],
+    "out_of_scope": [
+      {
+        "query": "How do I repair a bicycle chain?",
+        "similarity": 0.12724
+      },
+      {
+        "query": "Who won the football world cup in 1998?",
+        "similarity": 0.040493
+      }
+    ],
+    "threshold": 0.327505,
+    "method": "midpoint(max out-of-scope, min in-scope)"
+  },
+  "sentence": {
+    "in_scope": [
+      {
+        "query": "How do I book an appointment?",
+        "similarity": 0.700898
+      },
+      {
+        "query": "What is the cancellation and rescheduling window?",
+        "similarity": 0.507679
+      },
+      {
+        "query": "What is the turnaround time for laboratory blood test results?",
+        "similarity": 0.820397
+      }
+    ],
+    "out_of_scope": [
+      {
+        "query": "How do I repair a bicycle chain?",
+        "similarity": 0.083488
+      },
+      {
+        "query": "Who won the football world cup in 1998?",
+        "similarity": 0.031406
+      }
+    ],
+    "threshold": 0.295583,
+    "method": "midpoint(max out-of-scope, min in-scope)"
+  }
+}

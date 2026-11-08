@@ -1,0 +1,122 @@
+{
+  "server": "Uvicorn on real loopback TCP socket",
+  "health_status": 200,
+  "http_result": {
+    "trace_id": "71065fb7f29d40e6979b1396b2c75e68",
+    "session_id": "live-http",
+    "response_format": {
+      "answer": "Appointment APT-010 is Completed. Recorded consultation fee: INR 500. Administrative escalation score: 0.093. No administrative escalation recommended.",
+      "citations": [],
+      "lookup": {
+        "record_id": "APT-010",
+        "found": true,
+        "status": "Completed",
+        "consultation_fee_inr": 500,
+        "escalation_score": 0.093333,
+        "recommend_escalation": false
+      },
+      "fallback": false
+    },
+    "review": {
+      "approved": true,
+      "final_answer": "Appointment APT-010 is Completed. Recorded consultation fee: INR 500. Administrative escalation score: 0.093. No administrative escalation recommended.",
+      "reason": "Draft is supported by retrieved policy/lookup evidence."
+    },
+    "outcome": "answered",
+    "cache_hit": false,
+    "masked_input": "Check APT-010",
+    "elapsed_ms": 267.602,
+    "executed_agents": [
+      "Retrieval Agent",
+      "Lookup Agent",
+      "Response Composer",
+      "PolicyComplianceReviewer",
+      "FinalEditor"
+    ],
+    "executed_tools": [
+      "rag_lookup",
+      "check_appointment_status"
+    ],
+    "budget_units": 17201
+  },
+  "websocket_turns": [
+    {
+      "trace_id": "51e774a7bea64602b60e02db3f5b97f0",
+      "session_id": "live-ws",
+      "response_format": {
+        "answer": "Appointment APT-011 is Rescheduled. Recorded consultation fee: INR 1200. Administrative escalation score: 0.350. No administrative escalation recommended.",
+        "citations": [],
+        "lookup": {
+          "record_id": "APT-011",
+          "found": true,
+          "status": "Rescheduled",
+          "consultation_fee_inr": 1200,
+          "escalation_score": 0.35,
+          "recommend_escalation": false
+        },
+        "fallback": false
+      },
+      "review": {
+        "approved": true,
+        "final_answer": "Appointment APT-011 is Rescheduled. Recorded consultation fee: INR 1200. Administrative escalation score: 0.350. No administrative escalation recommended.",
+        "reason": "Draft is supported by retrieved policy/lookup evidence."
+      },
+      "outcome": "answered",
+      "cache_hit": false,
+      "masked_input": "Status of APT-011",
+      "elapsed_ms": 215.786,
+      "executed_agents": [
+        "Retrieval Agent",
+        "Lookup Agent",
+        "Response Composer",
+        "PolicyComplianceReviewer",
+        "FinalEditor"
+      ],
+      "executed_tools": [
+        "rag_lookup",
+        "check_appointment_status"
+      ],
+      "budget_units": 17209
+    },
+    {
+      "trace_id": "acdbef485cb842cfa5b42d281dc8ccf9",
+      "session_id": "live-ws",
+      "response_format": {
+        "answer": "Appointment APT-011 is Rescheduled. Recorded consultation fee: INR 1200. Administrative escalation score: 0.350. No administrative escalation recommended.",
+        "citations": [],
+        "lookup": {
+          "record_id": "APT-011",
+          "found": true,
+          "status": "Rescheduled",
+          "consultation_fee_inr": 1200,
+          "escalation_score": 0.35,
+          "recommend_escalation": false
+        },
+        "fallback": false
+      },
+      "review": {
+        "approved": true,
+        "final_answer": "Appointment APT-011 is Rescheduled. Recorded consultation fee: INR 1200. Administrative escalation score: 0.350. No administrative escalation recommended.",
+        "reason": "Draft is supported by retrieved policy/lookup evidence."
+      },
+      "outcome": "answered",
+      "cache_hit": false,
+      "masked_input": "What is its fee?",
+      "elapsed_ms": 209.336,
+      "executed_agents": [
+        "Retrieval Agent",
+        "Lookup Agent",
+        "Response Composer",
+        "PolicyComplianceReviewer",
+        "FinalEditor"
+      ],
+      "executed_tools": [
+        "rag_lookup",
+        "check_appointment_status"
+      ],
+      "budget_units": 20129
+    }
+  ],
+  "health_after_websocket_disconnect": 200,
+  "external_network_attempts": []
+}

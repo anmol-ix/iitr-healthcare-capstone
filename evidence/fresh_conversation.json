@@ -1,0 +1,30 @@
+{
+  "trace_id": "174ce32a077344b88ef5de6a464606e5",
+  "session_id": "fresh-conversation",
+  "response_format": {
+    "answer": "Please provide an appointment reference such as APT-001. This session has no appointment reference.",
+    "citations": [],
+    "lookup": null,
+    "fallback": true
+  },
+  "review": {
+    "approved": true,
+    "final_answer": "Please provide an appointment reference such as APT-001. This session has no appointment reference.",
+    "reason": "Draft is supported by retrieved policy/lookup evidence."
+  },
+  "outcome": "fallback",
+  "cache_hit": false,
+  "masked_input": "What is its fee?",
+  "elapsed_ms": 46.711,
+  "executed_agents": [
+    "Retrieval Agent",
+    "Lookup Agent",
+    "Response Composer",
+    "PolicyComplianceReviewer",
+    "FinalEditor"
+  ],
+  "executed_tools": [
+    "rag_lookup"
+  ],
+  "budget_units": 19520
+}

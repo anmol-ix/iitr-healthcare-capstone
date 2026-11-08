@@ -1,0 +1,244 @@
+[
+  {
+    "transport": "HTTP",
+    "path": "/ask",
+    "request": {
+      "query": "What is the status of APT-002?",
+      "session_id": "api-demo"
+    },
+    "status": 200,
+    "body": {
+      "trace_id": "1728e1b0b01b41738c2c0ecdac94a155",
+      "session_id": "api-demo",
+      "response_format": {
+        "answer": "Appointment APT-002 is Completed. Recorded consultation fee: INR 1700. Administrative escalation score: 0.023. No administrative escalation recommended.",
+        "citations": [],
+        "lookup": {
+          "record_id": "APT-002",
+          "found": true,
+          "status": "Completed",
+          "consultation_fee_inr": 1700,
+          "escalation_score": 0.023333,
+          "recommend_escalation": false
+        },
+        "fallback": false
+      },
+      "review": {
+        "approved": true,
+        "final_answer": "Appointment APT-002 is Completed. Recorded consultation fee: INR 1700. Administrative escalation score: 0.023. No administrative escalation recommended.",
+        "reason": "Draft is supported by retrieved policy/lookup evidence."
+      },
+      "outcome": "answered",
+      "cache_hit": false,
+      "masked_input": "What is the status of APT-002?",
+      "elapsed_ms": 116.675,
+      "executed_agents": [
+        "Retrieval Agent",
+        "Lookup Agent",
+        "Response Composer",
+        "PolicyComplianceReviewer",
+        "FinalEditor"
+      ],
+      "executed_tools": [
+        "rag_lookup",
+        "check_appointment_status"
+      ],
+      "budget_units": 17287
+    }
+  },
+  {
+    "transport": "HTTP",
+    "path": "/ask",
+    "request": {
+      "query": ""
+    },
+    "status": 422,
+    "body": {
+      "detail": [
+        {
+          "type": "string_too_short",
+          "loc": [
+            "body",
+            "query"
+          ],
+          "msg": "String should have at least 1 character",
+          "input": "",
+          "ctx": {
+            "min_length": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "transport": "WebSocket",
+    "query": "What is the status of APT-007?",
+    "response": {
+      "trace_id": "ed0aa3fae955404297e4775072681e94",
+      "session_id": "socket-demo",
+      "response_format": {
+        "answer": "Appointment APT-007 is Cancelled. Recorded consultation fee: INR 1900. Administrative escalation score: 0.895. No administrative escalation recommended.",
+        "citations": [],
+        "lookup": {
+          "record_id": "APT-007",
+          "found": true,
+          "status": "Cancelled",
+          "consultation_fee_inr": 1900,
+          "escalation_score": 0.895,
+          "recommend_escalation": false
+        },
+        "fallback": false
+      },
+      "review": {
+        "approved": true,
+        "final_answer": "Appointment APT-007 is Cancelled. Recorded consultation fee: INR 1900. Administrative escalation score: 0.895. No administrative escalation recommended.",
+        "reason": "Draft is supported by retrieved policy/lookup evidence."
+      },
+      "outcome": "answered",
+      "cache_hit": false,
+      "masked_input": "What is the status of APT-007?",
+      "elapsed_ms": 89.311,
+      "executed_agents": [
+        "Retrieval Agent",
+        "Lookup Agent",
+        "Response Composer",
+        "PolicyComplianceReviewer",
+        "FinalEditor"
+      ],
+      "executed_tools": [
+        "rag_lookup",
+        "check_appointment_status"
+      ],
+      "budget_units": 17228
+    }
+  },
+  {
+    "transport": "WebSocket",
+    "query": "What is its fee?",
+    "response": {
+      "trace_id": "982ae9aa681f4501bc7d58f57c018126",
+      "session_id": "socket-demo",
+      "response_format": {
+        "answer": "Appointment APT-007 is Cancelled. Recorded consultation fee: INR 1900. Administrative escalation score: 0.895. No administrative escalation recommended.",
+        "citations": [],
+        "lookup": {
+          "record_id": "APT-007",
+          "found": true,
+          "status": "Cancelled",
+          "consultation_fee_inr": 1900,
+          "escalation_score": 0.895,
+          "recommend_escalation": false
+        },
+        "fallback": false
+      },
+      "review": {
+        "approved": true,
+        "final_answer": "Appointment APT-007 is Cancelled. Recorded consultation fee: INR 1900. Administrative escalation score: 0.895. No administrative escalation recommended.",
+        "reason": "Draft is supported by retrieved policy/lookup evidence."
+      },
+      "outcome": "answered",
+      "cache_hit": false,
+      "masked_input": "What is its fee?",
+      "elapsed_ms": 59.739,
+      "executed_agents": [
+        "Retrieval Agent",
+        "Lookup Agent",
+        "Response Composer",
+        "PolicyComplianceReviewer",
+        "FinalEditor"
+      ],
+      "executed_tools": [
+        "rag_lookup",
+        "check_appointment_status"
+      ],
+      "budget_units": 20118
+    }
+  },
+  {
+    "after_disconnect": "GET /health",
+    "status": 200,
+    "body": {
+      "status": "ok",
+      "mode": "MOCK_LLM",
+      "network_required": false,
+      "documents": 12
+    }
+  },
+  {
+    "transport": "WebSocket new session",
+    "response": {
+      "trace_id": "68eb076676fc457d9b4ee597457c4f48",
+      "session_id": "socket-fresh",
+      "response_format": {
+        "answer": "Please provide an appointment reference such as APT-001. This session has no appointment reference.",
+        "citations": [],
+        "lookup": null,
+        "fallback": true
+      },
+      "review": {
+        "approved": true,
+        "final_answer": "Please provide an appointment reference such as APT-001. This session has no appointment reference.",
+        "reason": "Draft is supported by retrieved policy/lookup evidence."
+      },
+      "outcome": "fallback",
+      "cache_hit": true,
+      "masked_input": "What is its fee?",
+      "elapsed_ms": 0.118,
+      "executed_agents": [],
+      "executed_tools": [],
+      "budget_units": 528
+    }
+  },
+  {
+    "transport": "HTTP",
+    "path": "/add-document",
+    "request": {
+      "document_id": "accessibility",
+      "title": "Wheelchair access",
+      "text": "A wheelchair-accessible ramp is available at the clinic entrance. Reception staff can arrange entry assistance on request."
+    },
+    "status": 200,
+    "body": {
+      "document_id": "accessibility",
+      "revision": 1,
+      "collections": [
+        "fixed",
+        "sentence"
+      ]
+    }
+  },
+  {
+    "after_document_update": {
+      "trace_id": "d2069433b45148e6b075be5480e33714",
+      "session_id": "new-policy",
+      "response_format": {
+        "answer": "A wheelchair-accessible ramp is available at the clinic entrance. Reception staff can arrange entry assistance on request.",
+        "citations": [
+          "accessibility"
+        ],
+        "lookup": null,
+        "fallback": false
+      },
+      "review": {
+        "approved": true,
+        "final_answer": "A wheelchair-accessible ramp is available at the clinic entrance. Reception staff can arrange entry assistance on request.",
+        "reason": "Draft is supported by retrieved policy/lookup evidence."
+      },
+      "outcome": "answered",
+      "cache_hit": false,
+      "masked_input": "Is wheelchair access available at the entrance?",
+      "elapsed_ms": 73.564,
+      "executed_agents": [
+        "Retrieval Agent",
+        "Lookup Agent",
+        "Response Composer",
+        "PolicyComplianceReviewer",
+        "FinalEditor"
+      ],
+      "executed_tools": [
+        "rag_lookup"
+      ],
+      "budget_units": 17635
+    }
+  }
+]

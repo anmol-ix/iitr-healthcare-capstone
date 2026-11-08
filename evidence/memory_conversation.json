@@ -1,0 +1,121 @@
+{
+  "session_id": "memory-demo",
+  "turns": [
+    {
+      "trace_id": "dd98193d564a4d87bdfbab43f181a9ea",
+      "session_id": "memory-demo",
+      "response_format": {
+        "answer": "Appointment APT-001 is Completed. Recorded consultation fee: INR 1100. Administrative escalation score: 0.327. No administrative escalation recommended.",
+        "citations": [],
+        "lookup": {
+          "record_id": "APT-001",
+          "found": true,
+          "status": "Completed",
+          "consultation_fee_inr": 1100,
+          "escalation_score": 0.326667,
+          "recommend_escalation": false
+        },
+        "fallback": false
+      },
+      "review": {
+        "approved": true,
+        "final_answer": "Appointment APT-001 is Completed. Recorded consultation fee: INR 1100. Administrative escalation score: 0.327. No administrative escalation recommended.",
+        "reason": "Draft is supported by retrieved policy/lookup evidence."
+      },
+      "outcome": "answered",
+      "cache_hit": false,
+      "masked_input": "What is the status of APT-001?",
+      "elapsed_ms": 70.285,
+      "executed_agents": [
+        "Retrieval Agent",
+        "Lookup Agent",
+        "Response Composer",
+        "PolicyComplianceReviewer",
+        "FinalEditor"
+      ],
+      "executed_tools": [
+        "rag_lookup",
+        "check_appointment_status"
+      ],
+      "budget_units": 17265
+    },
+    {
+      "trace_id": "2c4a102de1f24ec48f85e9f36f8594b5",
+      "session_id": "memory-demo",
+      "response_format": {
+        "answer": "Appointment APT-001 is Completed. Recorded consultation fee: INR 1100. Administrative escalation score: 0.327. No administrative escalation recommended.",
+        "citations": [],
+        "lookup": {
+          "record_id": "APT-001",
+          "found": true,
+          "status": "Completed",
+          "consultation_fee_inr": 1100,
+          "escalation_score": 0.326667,
+          "recommend_escalation": false
+        },
+        "fallback": false
+      },
+      "review": {
+        "approved": true,
+        "final_answer": "Appointment APT-001 is Completed. Recorded consultation fee: INR 1100. Administrative escalation score: 0.327. No administrative escalation recommended.",
+        "reason": "Draft is supported by retrieved policy/lookup evidence."
+      },
+      "outcome": "answered",
+      "cache_hit": false,
+      "masked_input": "What is its fee?",
+      "elapsed_ms": 85.206,
+      "executed_agents": [
+        "Retrieval Agent",
+        "Lookup Agent",
+        "Response Composer",
+        "PolicyComplianceReviewer",
+        "FinalEditor"
+      ],
+      "executed_tools": [
+        "rag_lookup",
+        "check_appointment_status"
+      ],
+      "budget_units": 20129
+    }
+  ],
+  "langchain_messages": [
+    {
+      "content": "What is the status of APT-001?",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    },
+    {
+      "content": "{\"answer\":\"Appointment APT-001 is Completed. Recorded consultation fee: INR 1100. Administrative escalation score: 0.327. No administrative escalation recommended.\",\"citations\":[],\"lookup\":{\"record_id\":\"APT-001\",\"found\":true,\"status\":\"Completed\",\"consultation_fee_inr\":1100,\"escalation_score\":0.326667,\"recommend_escalation\":false},\"fallback\":false}",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    },
+    {
+      "content": "What is its fee?",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    },
+    {
+      "content": "{\"answer\":\"Appointment APT-001 is Completed. Recorded consultation fee: INR 1100. Administrative escalation score: 0.327. No administrative escalation recommended.\",\"citations\":[],\"lookup\":{\"record_id\":\"APT-001\",\"found\":true,\"status\":\"Completed\",\"consultation_fee_inr\":1100,\"escalation_score\":0.326667,\"recommend_escalation\":false},\"fallback\":false}",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  ]
+}

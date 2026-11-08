@@ -1,0 +1,2 @@
+# Install from the repository root. Setup needs internet; runtime is offline.
+-e .[dev]

@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "practo-healthcare-capstone"
+version = "1.0.0"
+description = "IITR-AS-260313 Healthcare support agent: offline, evidence-driven capstone"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "crewai==1.15.37", "autogen-agentchat==0.7.5", "autogen-ext==0.7.5",
+  "langchain-core==1.7.6", "sentence-transformers==6.2.0", "chromadb==1.5.9",
+  "fastapi==0.162.2", "uvicorn==0.54.0", "httpx==0.28.1", "websockets==17.4"
+]
+
+[project.optional-dependencies]
+dev = ["pytest==9.2.0"]
+
+[tool.setuptools]
+py-modules = ["dataset"]
+packages = ["practo"]
+package-dir = {"practo" = "src/practo"}
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "src"]
+addopts = "-ra"
+
+
+[tool.setuptools.package-data]
+practo = ["web/*.html", "web/*.css", "web/*.js"]

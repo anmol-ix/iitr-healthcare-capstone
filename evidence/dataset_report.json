@@ -1,0 +1,38 @@
+{
+  "seed": 20261108,
+  "count": 60,
+  "category_weights": [
+    30,
+    15,
+    20,
+    20,
+    15
+  ],
+  "status_weights": [
+    30,
+    35,
+    10,
+    10,
+    15
+  ],
+  "fee_range_inr": [
+    400,
+    2000
+  ],
+  "category_counts": {
+    "Orthopedics": 7,
+    "Dermatology": 13,
+    "Pediatrics": 16,
+    "General Medicine": 14,
+    "Cardiology": 10
+  },
+  "status_counts": {
+    "Completed": 22,
+    "Scheduled": 20,
+    "Rescheduled": 7,
+    "Cancelled": 4,
+    "No-Show": 7
+  },
+  "follow_up_count": 12,
+  "follow_up_percent": 20.0
+}

@@ -1,0 +1,49 @@
+........................................................................ [ 77%]
+.....................                                                    [100%]
+=============================== warnings summary ===============================
+tests/test_capstone.py::test_fifteen_case_evaluation[E01]
+  /workspace/scratch/7c7791728222/practo-capstone/src/practo/service.py:74: LangChainDeprecationWarning: The class `InMemoryChatMessageHistory` was deprecated in LangChain 1.6.4 and will be removed in 2.0.0 See the short-term memory documentation for recommended alternatives: https://docs.langchain.com/oss/python/langchain/short-term-memory
+    self.histories[session_id] = InMemoryChatMessageHistory()
+
+tests/test_capstone.py: 102 warnings
+  /workspace/scratch/7c7791728222/.venv/lib/python3.12/site-packages/crewai/agent/core.py:446: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    if self.function_calling_llm and not isinstance(
+
+tests/test_capstone.py: 102 warnings
+  /workspace/scratch/7c7791728222/.venv/lib/python3.12/site-packages/crewai/agent/core.py:454: DeprecationWarning: deprecated
+    if self.allow_code_execution:
+
+tests/test_capstone.py: 102 warnings
+  /workspace/scratch/7c7791728222/.venv/lib/python3.12/site-packages/crewai/agent/core.py:465: DeprecationWarning: deprecated
+    if self.reasoning and self.planning_config is None:
+
+tests/test_capstone.py: 238 warnings
+  /workspace/scratch/7c7791728222/.venv/lib/python3.12/site-packages/crewai/crew.py:652: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    if self.function_calling_llm and not isinstance(self.function_calling_llm, LLM):
+
+tests/test_capstone.py: 34 warnings
+  /workspace/scratch/7c7791728222/.venv/lib/python3.12/site-packages/crewai/crews/utils.py:372: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    crew.function_calling_llm,
+
+tests/test_capstone.py: 102 warnings
+  /workspace/scratch/7c7791728222/.venv/lib/python3.12/site-packages/crewai/crews/utils.py:87: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    if not agent.function_calling_llm:  # type: ignore[attr-defined]
+
+tests/test_capstone.py: 102 warnings
+  /workspace/scratch/7c7791728222/.venv/lib/python3.12/site-packages/crewai/agent/core.py:1317: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    function_calling_llm=self.function_calling_llm,
+
+tests/test_capstone.py: 204 warnings
+  /workspace/scratch/7c7791728222/.venv/lib/python3.12/site-packages/crewai/crew.py:1681: DeprecationWarning: deprecated
+    if hasattr(agent, "allow_code_execution") and getattr(
+
+tests/test_capstone.py: 102 warnings
+  /workspace/scratch/7c7791728222/.venv/lib/python3.12/site-packages/crewai/crew.py:1688: DeprecationWarning: deprecated
+    and hasattr(agent, "multimodal")
+
+tests/test_capstone.py: 102 warnings
+  /workspace/scratch/7c7791728222/.venv/lib/python3.12/site-packages/crewai/crew.py:1689: DeprecationWarning: deprecated
+    and getattr(agent, "multimodal", False)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+93 passed, 1191 warnings in 34.74s

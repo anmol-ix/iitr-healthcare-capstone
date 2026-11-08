@@ -1,0 +1,794 @@
+[
+  {
+    "query": "How can I book a clinic appointment and when should I arrive?",
+    "response": {
+      "answer": "Appointment booking requires choosing a specialty, selecting an available slot, and confirming the appointment reference. A booking becomes Scheduled only after the clinic confirms the slot. Arrive 15 minutes before the confirmed appointment and bring the appointment reference.",
+      "citations": [
+        "booking"
+      ],
+      "lookup": null,
+      "fallback": false
+    },
+    "retrieval": {
+      "answer": "Appointment booking requires choosing a specialty, selecting an available slot, and confirming the appointment reference. A booking becomes Scheduled only after the clinic confirms the slot. Arrive 15 minutes before the confirmed appointment and bring the appointment reference.",
+      "chunks": [
+        {
+          "chunk_id": "booking-1",
+          "text": "A booking becomes Scheduled only after the clinic confirms the slot. Arrive 15 minutes before the confirmed appointment and bring the appointment reference.",
+          "document_id": "booking",
+          "similarity": 0.745911
+        },
+        {
+          "chunk_id": "booking-0",
+          "text": "Appointment booking requires choosing a specialty, selecting an available slot, and confirming the appointment reference. A booking becomes Scheduled only after the clinic confirms the slot.",
+          "document_id": "booking",
+          "similarity": 0.676842
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "booking-1",
+          "text": "A booking becomes Scheduled only after the clinic confirms the slot. Arrive 15 minutes before the confirmed appointment and bring the appointment reference.",
+          "document_id": "booking",
+          "similarity": 0.745911
+        },
+        {
+          "chunk_id": "booking-0",
+          "text": "Appointment booking requires choosing a specialty, selecting an available slot, and confirming the appointment reference. A booking becomes Scheduled only after the clinic confirms the slot.",
+          "document_id": "booking",
+          "similarity": 0.676842
+        },
+        {
+          "chunk_id": "insurance-1",
+          "text": "The clinic provides supporting billing documents within two business days after a visit. Coverage decisions and reimbursement timelines belong to the insurer; clinic staff cannot promise approval.",
+          "document_id": "insurance",
+          "similarity": 0.594099
+        },
+        {
+          "chunk_id": "insurance-0",
+          "text": "Insurance claims require the consultation invoice, payment receipt, and the insurer's completed claim form. The clinic provides supporting billing documents within two business days after a visit.",
+          "document_id": "insurance",
+          "similarity": 0.550739
+        }
+      ],
+      "citations": [
+        "booking"
+      ],
+      "fallback": false,
+      "cache_hit": false
+    }
+  },
+  {
+    "query": "How much notice is needed to cancel or reschedule without a change fee?",
+    "response": {
+      "answer": "Appointment cancellation and rescheduling are allowed without a change fee at least 12 hours before the appointment. Changes within 12 hours require staff review and do not guarantee a refund. A rescheduled visit receives a new confirmed slot while retaining the original appointment reference.",
+      "citations": [
+        "cancellation"
+      ],
+      "lookup": null,
+      "fallback": false
+    },
+    "retrieval": {
+      "answer": "Appointment cancellation and rescheduling are allowed without a change fee at least 12 hours before the appointment. Changes within 12 hours require staff review and do not guarantee a refund. A rescheduled visit receives a new confirmed slot while retaining the original appointment reference.",
+      "chunks": [
+        {
+          "chunk_id": "cancellation-0",
+          "text": "Appointment cancellation and rescheduling are allowed without a change fee at least 12 hours before the appointment. Changes within 12 hours require staff review and do not guarantee a refund.",
+          "document_id": "cancellation",
+          "similarity": 0.727602
+        },
+        {
+          "chunk_id": "cancellation-1",
+          "text": "Changes within 12 hours require staff review and do not guarantee a refund. A rescheduled visit receives a new confirmed slot while retaining the original appointment reference.",
+          "document_id": "cancellation",
+          "similarity": 0.570397
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "cancellation-0",
+          "text": "Appointment cancellation and rescheduling are allowed without a change fee at least 12 hours before the appointment. Changes within 12 hours require staff review and do not guarantee a refund.",
+          "document_id": "cancellation",
+          "similarity": 0.727602
+        },
+        {
+          "chunk_id": "cancellation-1",
+          "text": "Changes within 12 hours require staff review and do not guarantee a refund. A rescheduled visit receives a new confirmed slot while retaining the original appointment reference.",
+          "document_id": "cancellation",
+          "similarity": 0.570397
+        },
+        {
+          "chunk_id": "followup-1",
+          "text": "Procedures and laboratory tests are excluded from this follow-up discount. Visits outside seven days follow the standard consultation fee unless the clinic explicitly approves another arrangement.",
+          "document_id": "followup",
+          "similarity": 0.403613
+        },
+        {
+          "chunk_id": "followup-0",
+          "text": "A follow-up visit with the same specialty within seven days of the completed consultation receives a 50 percent consultation-fee discount after staff verification. Procedures and laboratory tests are excluded from this follow-up discount.",
+          "document_id": "followup",
+          "similarity": 0.396767
+        }
+      ],
+      "citations": [
+        "cancellation"
+      ],
+      "fallback": false,
+      "cache_hit": false
+    }
+  },
+  {
+    "query": "What are the consultation fees for each specialty?",
+    "response": {
+      "answer": "Consultation fees in this fictional clinic are INR 500 for General Medicine, INR 1200 for Cardiology, INR 800 for Dermatology, INR 700 for Pediatrics, and INR 1000 for Orthopedics. Laboratory tests and procedures are charged separately. A booked appointment's recorded fee is authoritative because a promotion or specialist tier can change the quoted fee.",
+      "citations": [
+        "fees"
+      ],
+      "lookup": null,
+      "fallback": false
+    },
+    "retrieval": {
+      "answer": "Consultation fees in this fictional clinic are INR 500 for General Medicine, INR 1200 for Cardiology, INR 800 for Dermatology, INR 700 for Pediatrics, and INR 1000 for Orthopedics. Laboratory tests and procedures are charged separately. A booked appointment's recorded fee is authoritative because a promotion or specialist tier can change the quoted fee.",
+      "chunks": [
+        {
+          "chunk_id": "fees-0",
+          "text": "Consultation fees in this fictional clinic are INR 500 for General Medicine, INR 1200 for Cardiology, INR 800 for Dermatology, INR 700 for Pediatrics, and INR 1000 for Orthopedics. Laboratory tests and procedures are charged separately.",
+          "document_id": "fees",
+          "similarity": 0.648941
+        },
+        {
+          "chunk_id": "fees-1",
+          "text": "Laboratory tests and procedures are charged separately. A booked appointment's recorded fee is authoritative because a promotion or specialist tier can change the quoted fee.",
+          "document_id": "fees",
+          "similarity": 0.557079
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "fees-0",
+          "text": "Consultation fees in this fictional clinic are INR 500 for General Medicine, INR 1200 for Cardiology, INR 800 for Dermatology, INR 700 for Pediatrics, and INR 1000 for Orthopedics. Laboratory tests and procedures are charged separately.",
+          "document_id": "fees",
+          "similarity": 0.648941
+        },
+        {
+          "chunk_id": "followup-0",
+          "text": "A follow-up visit with the same specialty within seven days of the completed consultation receives a 50 percent consultation-fee discount after staff verification. Procedures and laboratory tests are excluded from this follow-up discount.",
+          "document_id": "followup",
+          "similarity": 0.567957
+        },
+        {
+          "chunk_id": "fees-1",
+          "text": "Laboratory tests and procedures are charged separately. A booked appointment's recorded fee is authoritative because a promotion or specialist tier can change the quoted fee.",
+          "document_id": "fees",
+          "similarity": 0.557079
+        },
+        {
+          "chunk_id": "followup-1",
+          "text": "Procedures and laboratory tests are excluded from this follow-up discount. Visits outside seven days follow the standard consultation fee unless the clinic explicitly approves another arrangement.",
+          "document_id": "followup",
+          "similarity": 0.514483
+        }
+      ],
+      "citations": [
+        "fees"
+      ],
+      "fallback": false,
+      "cache_hit": false
+    }
+  },
+  {
+    "query": "What documents are needed for an insurance claim and who approves reimbursement?",
+    "response": {
+      "answer": "Insurance claims require the consultation invoice, payment receipt, and the insurer's completed claim form. The clinic provides supporting billing documents within two business days after a visit. Coverage decisions and reimbursement timelines belong to the insurer; clinic staff cannot promise approval.",
+      "citations": [
+        "insurance"
+      ],
+      "lookup": null,
+      "fallback": false
+    },
+    "retrieval": {
+      "answer": "Insurance claims require the consultation invoice, payment receipt, and the insurer's completed claim form. The clinic provides supporting billing documents within two business days after a visit. Coverage decisions and reimbursement timelines belong to the insurer; clinic staff cannot promise approval.",
+      "chunks": [
+        {
+          "chunk_id": "insurance-0",
+          "text": "Insurance claims require the consultation invoice, payment receipt, and the insurer's completed claim form. The clinic provides supporting billing documents within two business days after a visit.",
+          "document_id": "insurance",
+          "similarity": 0.589191
+        },
+        {
+          "chunk_id": "insurance-1",
+          "text": "The clinic provides supporting billing documents within two business days after a visit. Coverage decisions and reimbursement timelines belong to the insurer; clinic staff cannot promise approval.",
+          "document_id": "insurance",
+          "similarity": 0.499295
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "insurance-0",
+          "text": "Insurance claims require the consultation invoice, payment receipt, and the insurer's completed claim form. The clinic provides supporting billing documents within two business days after a visit.",
+          "document_id": "insurance",
+          "similarity": 0.589191
+        },
+        {
+          "chunk_id": "insurance-1",
+          "text": "The clinic provides supporting billing documents within two business days after a visit. Coverage decisions and reimbursement timelines belong to the insurer; clinic staff cannot promise approval.",
+          "document_id": "insurance",
+          "similarity": 0.499295
+        },
+        {
+          "chunk_id": "second_opinion-1",
+          "text": "Share existing reports with that clinician through the approved patient portal after providing consent. A second opinion is billed as a separate consultation and does not automatically cancel an existing treatment plan.",
+          "document_id": "second_opinion",
+          "similarity": 0.339691
+        },
+        {
+          "chunk_id": "privacy-0",
+          "text": "Patient information is accessible only to authorized staff for a documented care or support purpose. Patients may request access or correction through the clinic privacy desk after identity verification.",
+          "document_id": "privacy",
+          "similarity": 0.286343
+        }
+      ],
+      "citations": [
+        "insurance"
+      ],
+      "fallback": false,
+      "cache_hit": false
+    }
+  },
+  {
+    "query": "Can support staff approve a prescription refill or change my medication dose?",
+    "response": {
+      "answer": "Prescription refills require review by the prescribing clinician and an existing prescription from this clinic. Support staff can route a refill request but cannot prescribe medication, change a dose, or approve a refill. If the clinician requests reassessment, book a consultation before a prescription is renewed.",
+      "citations": [
+        "refill"
+      ],
+      "lookup": null,
+      "fallback": false
+    },
+    "retrieval": {
+      "answer": "Prescription refills require review by the prescribing clinician and an existing prescription from this clinic. Support staff can route a refill request but cannot prescribe medication, change a dose, or approve a refill. If the clinician requests reassessment, book a consultation before a prescription is renewed.",
+      "chunks": [
+        {
+          "chunk_id": "refill-1",
+          "text": "Support staff can route a refill request but cannot prescribe medication, change a dose, or approve a refill. If the clinician requests reassessment, book a consultation before a prescription is renewed.",
+          "document_id": "refill",
+          "similarity": 0.883248
+        },
+        {
+          "chunk_id": "refill-0",
+          "text": "Prescription refills require review by the prescribing clinician and an existing prescription from this clinic. Support staff can route a refill request but cannot prescribe medication, change a dose, or approve a refill.",
+          "document_id": "refill",
+          "similarity": 0.833333
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "refill-1",
+          "text": "Support staff can route a refill request but cannot prescribe medication, change a dose, or approve a refill. If the clinician requests reassessment, book a consultation before a prescription is renewed.",
+          "document_id": "refill",
+          "similarity": 0.883248
+        },
+        {
+          "chunk_id": "refill-0",
+          "text": "Prescription refills require review by the prescribing clinician and an existing prescription from this clinic. Support staff can route a refill request but cannot prescribe medication, change a dose, or approve a refill.",
+          "document_id": "refill",
+          "similarity": 0.833333
+        },
+        {
+          "chunk_id": "second_opinion-1",
+          "text": "Share existing reports with that clinician through the approved patient portal after providing consent. A second opinion is billed as a separate consultation and does not automatically cancel an existing treatment plan.",
+          "document_id": "second_opinion",
+          "similarity": 0.454102
+        },
+        {
+          "chunk_id": "insurance-1",
+          "text": "The clinic provides supporting billing documents within two business days after a visit. Coverage decisions and reimbursement timelines belong to the insurer; clinic staff cannot promise approval.",
+          "document_id": "insurance",
+          "similarity": 0.437375
+        }
+      ],
+      "citations": [
+        "refill"
+      ],
+      "fallback": false,
+      "cache_hit": false
+    }
+  },
+  {
+    "query": "When are routine and specialized laboratory test reports available?",
+    "response": {
+      "answer": "Routine laboratory blood test results are usually available within 24 hours after sample collection. Specialized tests generally take three to five business days, and the laboratory confirms the specific estimate at collection. Delayed results should be referred to the laboratory desk; support staff must not interpret test results.",
+      "citations": [
+        "lab"
+      ],
+      "lookup": null,
+      "fallback": false
+    },
+    "retrieval": {
+      "answer": "Routine laboratory blood test results are usually available within 24 hours after sample collection. Specialized tests generally take three to five business days, and the laboratory confirms the specific estimate at collection. Delayed results should be referred to the laboratory desk; support staff must not interpret test results.",
+      "chunks": [
+        {
+          "chunk_id": "lab-1",
+          "text": "Specialized tests generally take three to five business days, and the laboratory confirms the specific estimate at collection. Delayed results should be referred to the laboratory desk; support staff must not interpret test results.",
+          "document_id": "lab",
+          "similarity": 0.521756
+        },
+        {
+          "chunk_id": "lab-0",
+          "text": "Routine laboratory blood test results are usually available within 24 hours after sample collection. Specialized tests generally take three to five business days, and the laboratory confirms the specific estimate at collection.",
+          "document_id": "lab",
+          "similarity": 0.477493
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "lab-1",
+          "text": "Specialized tests generally take three to five business days, and the laboratory confirms the specific estimate at collection. Delayed results should be referred to the laboratory desk; support staff must not interpret test results.",
+          "document_id": "lab",
+          "similarity": 0.521756
+        },
+        {
+          "chunk_id": "lab-0",
+          "text": "Routine laboratory blood test results are usually available within 24 hours after sample collection. Specialized tests generally take three to five business days, and the laboratory confirms the specific estimate at collection.",
+          "document_id": "lab",
+          "similarity": 0.477493
+        },
+        {
+          "chunk_id": "fees-1",
+          "text": "Laboratory tests and procedures are charged separately. A booked appointment's recorded fee is authoritative because a promotion or specialist tier can change the quoted fee.",
+          "document_id": "fees",
+          "similarity": 0.429764
+        },
+        {
+          "chunk_id": "followup-1",
+          "text": "Procedures and laboratory tests are excluded from this follow-up discount. Visits outside seven days follow the standard consultation fee unless the clinic explicitly approves another arrangement.",
+          "document_id": "followup",
+          "similarity": 0.390166
+        }
+      ],
+      "citations": [
+        "lab"
+      ],
+      "fallback": false,
+      "cache_hit": false
+    }
+  },
+  {
+    "query": "Who is eligible for telemedicine and can it handle emergencies?",
+    "response": {
+      "answer": "Telemedicine consultations are available for eligible follow-up visits when the clinician confirms that a physical examination is unnecessary. A stable internet connection and consent to a remote consultation are required. New or worsening symptoms may require an in-person assessment, and emergencies are not eligible for telemedicine.",
+      "citations": [
+        "telemedicine"
+      ],
+      "lookup": null,
+      "fallback": false
+    },
+    "retrieval": {
+      "answer": "Telemedicine consultations are available for eligible follow-up visits when the clinician confirms that a physical examination is unnecessary. A stable internet connection and consent to a remote consultation are required. New or worsening symptoms may require an in-person assessment, and emergencies are not eligible for telemedicine.",
+      "chunks": [
+        {
+          "chunk_id": "telemedicine-1",
+          "text": "A stable internet connection and consent to a remote consultation are required. New or worsening symptoms may require an in-person assessment, and emergencies are not eligible for telemedicine.",
+          "document_id": "telemedicine",
+          "similarity": 0.711875
+        },
+        {
+          "chunk_id": "telemedicine-0",
+          "text": "Telemedicine consultations are available for eligible follow-up visits when the clinician confirms that a physical examination is unnecessary. A stable internet connection and consent to a remote consultation are required.",
+          "document_id": "telemedicine",
+          "similarity": 0.626665
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "telemedicine-1",
+          "text": "A stable internet connection and consent to a remote consultation are required. New or worsening symptoms may require an in-person assessment, and emergencies are not eligible for telemedicine.",
+          "document_id": "telemedicine",
+          "similarity": 0.711875
+        },
+        {
+          "chunk_id": "telemedicine-0",
+          "text": "Telemedicine consultations are available for eligible follow-up visits when the clinician confirms that a physical examination is unnecessary. A stable internet connection and consent to a remote consultation are required.",
+          "document_id": "telemedicine",
+          "similarity": 0.626665
+        },
+        {
+          "chunk_id": "emergency-1",
+          "text": "Routine appointment slots and this support assistant are not emergency response services. Clinic staff may provide routing assistance but must not delay urgent care while checking an appointment.",
+          "document_id": "emergency",
+          "similarity": 0.512043
+        },
+        {
+          "chunk_id": "emergency-0",
+          "text": "For a medical emergency, contact local emergency services or go to the nearest emergency department immediately. Routine appointment slots and this support assistant are not emergency response services.",
+          "document_id": "emergency",
+          "similarity": 0.444976
+        }
+      ],
+      "citations": [
+        "telemedicine"
+      ],
+      "fallback": false,
+      "cache_hit": false
+    }
+  },
+  {
+    "query": "What is the emergency visit protocol instead of waiting for a routine appointment?",
+    "response": {
+      "answer": "For a medical emergency, contact local emergency services or go to the nearest emergency department immediately. Routine appointment slots and this support assistant are not emergency response services. Clinic staff may provide routing assistance but must not delay urgent care while checking an appointment.",
+      "citations": [
+        "emergency"
+      ],
+      "lookup": null,
+      "fallback": false
+    },
+    "retrieval": {
+      "answer": "For a medical emergency, contact local emergency services or go to the nearest emergency department immediately. Routine appointment slots and this support assistant are not emergency response services. Clinic staff may provide routing assistance but must not delay urgent care while checking an appointment.",
+      "chunks": [
+        {
+          "chunk_id": "emergency-1",
+          "text": "Routine appointment slots and this support assistant are not emergency response services. Clinic staff may provide routing assistance but must not delay urgent care while checking an appointment.",
+          "document_id": "emergency",
+          "similarity": 0.718869
+        },
+        {
+          "chunk_id": "emergency-0",
+          "text": "For a medical emergency, contact local emergency services or go to the nearest emergency department immediately. Routine appointment slots and this support assistant are not emergency response services.",
+          "document_id": "emergency",
+          "similarity": 0.600421
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "emergency-1",
+          "text": "Routine appointment slots and this support assistant are not emergency response services. Clinic staff may provide routing assistance but must not delay urgent care while checking an appointment.",
+          "document_id": "emergency",
+          "similarity": 0.718869
+        },
+        {
+          "chunk_id": "emergency-0",
+          "text": "For a medical emergency, contact local emergency services or go to the nearest emergency department immediately. Routine appointment slots and this support assistant are not emergency response services.",
+          "document_id": "emergency",
+          "similarity": 0.600421
+        },
+        {
+          "chunk_id": "telemedicine-0",
+          "text": "Telemedicine consultations are available for eligible follow-up visits when the clinician confirms that a physical examination is unnecessary. A stable internet connection and consent to a remote consultation are required.",
+          "document_id": "telemedicine",
+          "similarity": 0.537156
+        },
+        {
+          "chunk_id": "booking-0",
+          "text": "Appointment booking requires choosing a specialty, selecting an available slot, and confirming the appointment reference. A booking becomes Scheduled only after the clinic confirms the slot.",
+          "document_id": "booking",
+          "similarity": 0.53654
+        }
+      ],
+      "citations": [
+        "emergency"
+      ],
+      "fallback": false,
+      "cache_hit": false
+    }
+  },
+  {
+    "query": "Who can access patient data and how can a patient request a correction?",
+    "response": {
+      "answer": "Patient information is accessible only to authorized staff for a documented care or support purpose. Patients may request access or correction through the clinic privacy desk after identity verification. This demonstration uses fabricated data only and masks phone numbers before processing or logging support requests.",
+      "citations": [
+        "privacy"
+      ],
+      "lookup": null,
+      "fallback": false
+    },
+    "retrieval": {
+      "answer": "Patient information is accessible only to authorized staff for a documented care or support purpose. Patients may request access or correction through the clinic privacy desk after identity verification. This demonstration uses fabricated data only and masks phone numbers before processing or logging support requests.",
+      "chunks": [
+        {
+          "chunk_id": "privacy-0",
+          "text": "Patient information is accessible only to authorized staff for a documented care or support purpose. Patients may request access or correction through the clinic privacy desk after identity verification.",
+          "document_id": "privacy",
+          "similarity": 0.775557
+        },
+        {
+          "chunk_id": "privacy-1",
+          "text": "Patients may request access or correction through the clinic privacy desk after identity verification. This demonstration uses fabricated data only and masks phone numbers before processing or logging support requests.",
+          "document_id": "privacy",
+          "similarity": 0.680966
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "privacy-0",
+          "text": "Patient information is accessible only to authorized staff for a documented care or support purpose. Patients may request access or correction through the clinic privacy desk after identity verification.",
+          "document_id": "privacy",
+          "similarity": 0.775557
+        },
+        {
+          "chunk_id": "privacy-1",
+          "text": "Patients may request access or correction through the clinic privacy desk after identity verification. This demonstration uses fabricated data only and masks phone numbers before processing or logging support requests.",
+          "document_id": "privacy",
+          "similarity": 0.680966
+        },
+        {
+          "chunk_id": "second_opinion-1",
+          "text": "Share existing reports with that clinician through the approved patient portal after providing consent. A second opinion is billed as a separate consultation and does not automatically cancel an existing treatment plan.",
+          "document_id": "second_opinion",
+          "similarity": 0.489218
+        },
+        {
+          "chunk_id": "second_opinion-0",
+          "text": "A second opinion can be requested by booking a consultation with a different clinician in the relevant specialty. Share existing reports with that clinician through the approved patient portal after providing consent.",
+          "document_id": "second_opinion",
+          "similarity": 0.481107
+        }
+      ],
+      "citations": [
+        "privacy"
+      ],
+      "fallback": false,
+      "cache_hit": false
+    }
+  },
+  {
+    "query": "What discount applies to a follow-up consultation and what is excluded?",
+    "response": {
+      "answer": "A follow-up visit with the same specialty within seven days of the completed consultation receives a 50 percent consultation-fee discount after staff verification. Procedures and laboratory tests are excluded from this follow-up discount. Visits outside seven days follow the standard consultation fee unless the clinic explicitly approves another arrangement.",
+      "citations": [
+        "followup"
+      ],
+      "lookup": null,
+      "fallback": false
+    },
+    "retrieval": {
+      "answer": "A follow-up visit with the same specialty within seven days of the completed consultation receives a 50 percent consultation-fee discount after staff verification. Procedures and laboratory tests are excluded from this follow-up discount. Visits outside seven days follow the standard consultation fee unless the clinic explicitly approves another arrangement.",
+      "chunks": [
+        {
+          "chunk_id": "followup-0",
+          "text": "A follow-up visit with the same specialty within seven days of the completed consultation receives a 50 percent consultation-fee discount after staff verification. Procedures and laboratory tests are excluded from this follow-up discount.",
+          "document_id": "followup",
+          "similarity": 0.730113
+        },
+        {
+          "chunk_id": "followup-1",
+          "text": "Procedures and laboratory tests are excluded from this follow-up discount. Visits outside seven days follow the standard consultation fee unless the clinic explicitly approves another arrangement.",
+          "document_id": "followup",
+          "similarity": 0.649478
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "followup-0",
+          "text": "A follow-up visit with the same specialty within seven days of the completed consultation receives a 50 percent consultation-fee discount after staff verification. Procedures and laboratory tests are excluded from this follow-up discount.",
+          "document_id": "followup",
+          "similarity": 0.730113
+        },
+        {
+          "chunk_id": "followup-1",
+          "text": "Procedures and laboratory tests are excluded from this follow-up discount. Visits outside seven days follow the standard consultation fee unless the clinic explicitly approves another arrangement.",
+          "document_id": "followup",
+          "similarity": 0.649478
+        },
+        {
+          "chunk_id": "second_opinion-1",
+          "text": "Share existing reports with that clinician through the approved patient portal after providing consent. A second opinion is billed as a separate consultation and does not automatically cancel an existing treatment plan.",
+          "document_id": "second_opinion",
+          "similarity": 0.464871
+        },
+        {
+          "chunk_id": "insurance-1",
+          "text": "The clinic provides supporting billing documents within two business days after a visit. Coverage decisions and reimbursement timelines belong to the insurer; clinic staff cannot promise approval.",
+          "document_id": "insurance",
+          "similarity": 0.443449
+        }
+      ],
+      "citations": [
+        "followup"
+      ],
+      "fallback": false,
+      "cache_hit": false
+    }
+  },
+  {
+    "query": "How do I request a second opinion and share my existing reports?",
+    "response": {
+      "answer": "A second opinion can be requested by booking a consultation with a different clinician in the relevant specialty. Share existing reports with that clinician through the approved patient portal after providing consent. A second opinion is billed as a separate consultation and does not automatically cancel an existing treatment plan.",
+      "citations": [
+        "second_opinion"
+      ],
+      "lookup": null,
+      "fallback": false
+    },
+    "retrieval": {
+      "answer": "A second opinion can be requested by booking a consultation with a different clinician in the relevant specialty. Share existing reports with that clinician through the approved patient portal after providing consent. A second opinion is billed as a separate consultation and does not automatically cancel an existing treatment plan.",
+      "chunks": [
+        {
+          "chunk_id": "second_opinion-1",
+          "text": "Share existing reports with that clinician through the approved patient portal after providing consent. A second opinion is billed as a separate consultation and does not automatically cancel an existing treatment plan.",
+          "document_id": "second_opinion",
+          "similarity": 0.702208
+        },
+        {
+          "chunk_id": "second_opinion-0",
+          "text": "A second opinion can be requested by booking a consultation with a different clinician in the relevant specialty. Share existing reports with that clinician through the approved patient portal after providing consent.",
+          "document_id": "second_opinion",
+          "similarity": 0.686903
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "second_opinion-1",
+          "text": "Share existing reports with that clinician through the approved patient portal after providing consent. A second opinion is billed as a separate consultation and does not automatically cancel an existing treatment plan.",
+          "document_id": "second_opinion",
+          "similarity": 0.702208
+        },
+        {
+          "chunk_id": "second_opinion-0",
+          "text": "A second opinion can be requested by booking a consultation with a different clinician in the relevant specialty. Share existing reports with that clinician through the approved patient portal after providing consent.",
+          "document_id": "second_opinion",
+          "similarity": 0.686903
+        },
+        {
+          "chunk_id": "insurance-0",
+          "text": "Insurance claims require the consultation invoice, payment receipt, and the insurer's completed claim form. The clinic provides supporting billing documents within two business days after a visit.",
+          "document_id": "insurance",
+          "similarity": 0.293718
+        },
+        {
+          "chunk_id": "privacy-0",
+          "text": "Patient information is accessible only to authorized staff for a documented care or support purpose. Patients may request access or correction through the clinic privacy desk after identity verification.",
+          "document_id": "privacy",
+          "similarity": 0.269882
+        }
+      ],
+      "citations": [
+        "second_opinion"
+      ],
+      "fallback": false,
+      "cache_hit": false
+    }
+  },
+  {
+    "query": "What is the distance limit and eligibility for a home visit?",
+    "response": {
+      "answer": "Home visits are offered only within ten kilometres of the clinic and depend on clinician availability and a suitability review. A separate travel charge is quoted and confirmed before booking. Emergency care, procedures requiring clinic equipment, and visits outside the service radius are not eligible for home visits.",
+      "citations": [
+        "home_visit"
+      ],
+      "lookup": null,
+      "fallback": false
+    },
+    "retrieval": {
+      "answer": "Home visits are offered only within ten kilometres of the clinic and depend on clinician availability and a suitability review. A separate travel charge is quoted and confirmed before booking. Emergency care, procedures requiring clinic equipment, and visits outside the service radius are not eligible for home visits.",
+      "chunks": [
+        {
+          "chunk_id": "home_visit-0",
+          "text": "Home visits are offered only within ten kilometres of the clinic and depend on clinician availability and a suitability review. A separate travel charge is quoted and confirmed before booking.",
+          "document_id": "home_visit",
+          "similarity": 0.607751
+        },
+        {
+          "chunk_id": "home_visit-1",
+          "text": "A separate travel charge is quoted and confirmed before booking. Emergency care, procedures requiring clinic equipment, and visits outside the service radius are not eligible for home visits.",
+          "document_id": "home_visit",
+          "similarity": 0.527256
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "home_visit-0",
+          "text": "Home visits are offered only within ten kilometres of the clinic and depend on clinician availability and a suitability review. A separate travel charge is quoted and confirmed before booking.",
+          "document_id": "home_visit",
+          "similarity": 0.607751
+        },
+        {
+          "chunk_id": "home_visit-1",
+          "text": "A separate travel charge is quoted and confirmed before booking. Emergency care, procedures requiring clinic equipment, and visits outside the service radius are not eligible for home visits.",
+          "document_id": "home_visit",
+          "similarity": 0.527256
+        },
+        {
+          "chunk_id": "followup-1",
+          "text": "Procedures and laboratory tests are excluded from this follow-up discount. Visits outside seven days follow the standard consultation fee unless the clinic explicitly approves another arrangement.",
+          "document_id": "followup",
+          "similarity": 0.361651
+        },
+        {
+          "chunk_id": "followup-0",
+          "text": "A follow-up visit with the same specialty within seven days of the completed consultation receives a 50 percent consultation-fee discount after staff verification. Procedures and laboratory tests are excluded from this follow-up discount.",
+          "document_id": "followup",
+          "similarity": 0.271024
+        }
+      ],
+      "citations": [
+        "home_visit"
+      ],
+      "fallback": false,
+      "cache_hit": false
+    }
+  },
+  {
+    "query": "Write a Python sorting algorithm for a list of integers.",
+    "response": {
+      "answer": "I don't know based on the available clinic policy documents. Please contact clinic support.",
+      "citations": [],
+      "lookup": null,
+      "fallback": true
+    },
+    "retrieval": {
+      "answer": "I don't know based on the available clinic policy documents. Please contact clinic support.",
+      "chunks": [],
+      "retrieved": [
+        {
+          "chunk_id": "emergency-0",
+          "text": "For a medical emergency, contact local emergency services or go to the nearest emergency department immediately. Routine appointment slots and this support assistant are not emergency response services.",
+          "document_id": "emergency",
+          "similarity": 0.051047
+        },
+        {
+          "chunk_id": "booking-0",
+          "text": "Appointment booking requires choosing a specialty, selecting an available slot, and confirming the appointment reference. A booking becomes Scheduled only after the clinic confirms the slot.",
+          "document_id": "booking",
+          "similarity": 0.02143
+        },
+        {
+          "chunk_id": "fees-0",
+          "text": "Consultation fees in this fictional clinic are INR 500 for General Medicine, INR 1200 for Cardiology, INR 800 for Dermatology, INR 700 for Pediatrics, and INR 1000 for Orthopedics. Laboratory tests and procedures are charged separately.",
+          "document_id": "fees",
+          "similarity": 0.014776
+        },
+        {
+          "chunk_id": "privacy-1",
+          "text": "Patients may request access or correction through the clinic privacy desk after identity verification. This demonstration uses fabricated data only and masks phone numbers before processing or logging support requests.",
+          "document_id": "privacy",
+          "similarity": 0.014573
+        }
+      ],
+      "citations": [],
+      "fallback": true,
+      "cache_hit": false
+    }
+  },
+  {
+    "query": "How can I bake a chocolate cake in an oven?",
+    "response": {
+      "answer": "I don't know based on the available clinic policy documents. Please contact clinic support.",
+      "citations": [],
+      "lookup": null,
+      "fallback": true
+    },
+    "retrieval": {
+      "answer": "I don't know based on the available clinic policy documents. Please contact clinic support.",
+      "chunks": [],
+      "retrieved": [
+        {
+          "chunk_id": "telemedicine-1",
+          "text": "A stable internet connection and consent to a remote consultation are required. New or worsening symptoms may require an in-person assessment, and emergencies are not eligible for telemedicine.",
+          "document_id": "telemedicine",
+          "similarity": 0.031888
+        },
+        {
+          "chunk_id": "booking-1",
+          "text": "A booking becomes Scheduled only after the clinic confirms the slot. Arrive 15 minutes before the confirmed appointment and bring the appointment reference.",
+          "document_id": "booking",
+          "similarity": 0.03165
+        },
+        {
+          "chunk_id": "privacy-1",
+          "text": "Patients may request access or correction through the clinic privacy desk after identity verification. This demonstration uses fabricated data only and masks phone numbers before processing or logging support requests.",
+          "document_id": "privacy",
+          "similarity": 0.021285
+        },
+        {
+          "chunk_id": "booking-0",
+          "text": "Appointment booking requires choosing a specialty, selecting an available slot, and confirming the appointment reference. A booking becomes Scheduled only after the clinic confirms the slot.",
+          "document_id": "booking",
+          "similarity": 0.013532
+        }
+      ],
+      "citations": [],
+      "fallback": true,
+      "cache_hit": false
+    }
+  }
+]

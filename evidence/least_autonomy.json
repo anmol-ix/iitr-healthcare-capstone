@@ -1,0 +1,12 @@
+{
+  "actual_tool_ownership": {
+    "Retrieval Agent": [
+      "rag_lookup"
+    ],
+    "Lookup Agent": [
+      "check_appointment_status"
+    ],
+    "Response Composer": []
+  },
+  "unauthorized_wiring_blocked": true
+}
